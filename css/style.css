@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* common */
+body {
+  margin: 0;
+}
+
+h1,h2,h3,
+p {
+  margin: 0;
+}
+
+h1, h2, h3,
+p,
+div {
+  font-family: メイリオ, sans-serif;
+}
+
+img {
+  vertical-align: bottom;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 32px;
+  text-decoration: underline solid #000 1px;
+  text-underline-offset: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* header */
+header {
+  height: 64px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  margin-left: 30px;
+}
+
+header .nav ul {
+  display: flex;
+}
+
+header .nav ul li a {
+  /* color初期値 */
+  color: canvastext;
+  text-decoration: none;
+}
+
+header .nav  ul > li {
+  font-size: 14px;
+}
+
+header .nav ul > li + li {
+  margin: 0 30px;
+}
+
+header .nav  ul > li:hover {
+  opacity: 0.6;
+}
+
+/* main */
+.about h2,
+.bicycle h2 {
+  text-align: center;
+  margin: 70px auto;
+}
+
+h1 img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* main section*/
+.about {
+  padding: 0 32px;
+}
+
+.profileImg {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profileImg img {
+  border-radius: 30%;
+}
+
+.profile {
+  margin: 0 auto;
+}
+
+.profile h3,
+.profile p {
+  margin-top: 24px;
+}
+
+.profile h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.profile p {
+  margin-left: 8px;
+}
+
+.bicycle ul {
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.bicycle ul li + li {
+  margin-top: 32px;
+}
+
+.bicycle ul li img {
+  padding: 0 8px;
+  max-width: 100%;
+}
+
+.bicycle ul li h3 {
+  padding: 8px 0;
+}
+
+
+/* footer */
+footer {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+}
+
+small  {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  font-size: 8px;
+  opacity: 0.6;
+}
+
+/* Responsive Web Desain 
+large screen 600px*/
+@media (min-width: 600px) {
+  /* about */
+  .about .container {
+    margin: 0 auto;
+    width: 550px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .container div + div {
+    margin-left: 50px;
+  }
+  
+  /* bicyele */
+  .bicycle ul {
+    display: flex;
+  }
+  
+  .bicycle ul li + li {
+    margin-top: 0;
+  }
+}
+
